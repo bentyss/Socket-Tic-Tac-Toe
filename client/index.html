@@ -1,0 +1,461 @@
+<head>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 100px;
+}
+
+.myButton {
+	-moz-box-shadow:inset 2px -2px 21px -2px #242d5e;
+	-webkit-box-shadow:inset 2px -2px 21px -2px #242d5e;
+	box-shadow:inset 2px -2px 21px -2px #242d5e;
+	background-color:transparent;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:50px 50px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #13546e;
+}
+.myButton:hover {
+	background-color:transparent;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Gudea:400,700);
+
+body{
+  perspective:800px;
+  height: 100vh;
+  margin:0;
+  overflow: hidden;
+  font-family: 'Gudea', sans-serif;
+  background: #FFD89B ; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #FFD89B  0%, #19547b 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#FFD89B ), color-stop(100%,#19547b)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  #FFD89B  0%,#19547b 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  #FFD89B  0%,#19547b 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  #FFD89B  0%,#19547b 100%); /* IE10+ */
+  background: linear-gradient(135deg,  #FFD89B  0%,#19547b 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFD89B ', endColorstr='#19547b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  ::-webkit-input-placeholder {
+    color: #4E546D
+  }
+  p{
+    color: #5B5E6F;
+    font-size:10px;
+    text-align:left;
+  }
+  .testtwo{
+    left:-320px !important;
+  }
+  .test{
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    pointer-events:none;
+    top:-100px !important;
+    transform:rotateX(70deg) scale(.8) !important;
+    opacity: .6 !important;
+    filter: blur(1px);
+  }
+  .login{
+    display: block;
+	margin-right: auto;
+	margin-left: auto;
+    opacity:1;
+    top:20px;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.25, 0.265, .85);
+    transition-property:transform,opacity,box-shadow,top,left;
+    transition-duration:.5s;
+    transform-origin:161px 100%;
+    transform:rotateX(0deg);
+    position:relative;
+    .validation{
+      position:absolute;
+      z-index:1;
+      right:10px;
+      top:6px;
+      opacity:0;
+    }
+    width:240px;
+    border-top: 2px solid #D8312A;
+    height:300px;
+    position:absolute;
+	to;
+    padding:100px 40px 40px 40px;
+    background: #35394a; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #35394a 0%, #1f222e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#35394a), color-stop(100%,#1f222e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #35394a 0%,#1f222e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35394a', endColorstr='#1f222e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    &_title{
+      color:rgb(175, 177, 190);
+      height:60px;
+      text-align:left;
+      font-size:16px;
+    }
+    &_fields{
+      height: 808px;
+      position: absolute;
+      left: 0;
+      .icon{
+        position: absolute;
+        z-index: 1;
+        left: 36px;
+        top: 8px;
+        opacity:.5;
+      }
+      input[type='password']{
+        color:#DC6180 !important;
+      }
+      input[type='text'],input[type='password']{
+        color: #afb1be;
+        width: 190px;
+        margin-top:-2px;
+        background: rgb(50, 54, 74);
+        padding: 10px 65px;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+        border-top: 2px solid rgb(57, 61, 82);
+        border-bottom: 2px solid rgb(57, 61, 82);
+        border-right: none;
+        border-left: none;
+        outline: none;
+        font-family: 'Gudea', sans-serif;
+        box-shadow: none;
+      }
+      &__user,&__password{
+        position:relative;
+      }
+      &__submit{
+        position: relative;
+        top: 35px;
+        width: 80%;
+        margin: auto;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+        .forgot{
+          float: right;
+          font-size: 10px;
+          margin-top: 11px;
+          a{
+            color: rgb(96, 100, 121);
+          }
+          text-decoration: underline;
+        }
+        input{
+          &:focus{
+            box-shadow:none;
+            outline:none;
+          }
+          border-radius:50px;
+          background:transparent;
+          padding:10px 50px;
+          border:2px solid #DC6180 ;
+          color: #DC6180 ;
+          text-transform:uppercase;
+          font-size:11px;
+          transition-property:background,color;
+          transition-duration:.2s;
+          &:hover{
+            color:white;
+            background:#DC6180 ;
+            cursor:pointer;
+            transition-property:background,color;
+            transition-duration:.2s;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+</style>
+</head>
+<body>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div align="center" class= 'center-block' id="signDiv">
+<div class='login'>
+  <div class='login_title'>
+    <span>Login with a username</span>
+  </div>
+  <br />
+  <div class='login_fields'>
+    <div class='login_fields__user'>
+      <div class='icon'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+      </div>
+      <input id="signDiv-username" placeholder='Username' type='text'>
+      </input>
+    </div>
+	<button class="login_fields__submit" id="signDiv-signIn">Sign In</button>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+ 
+<div align="center" id="gameDiv" style="display:none;">
+	<button href="#" class="myButton"id="1">   </button>
+	<button href="#" class="myButton"id="2">   </button>
+	<button href="#" class="myButton"id="3">   </button>
+	<div></div>
+	<button href="#" class="myButton"id="4">   </button>
+	<button href="#" class="myButton"id="5">   </button>
+	<button href="#" class="myButton"id="6">   </button>
+	<div></div>
+	<button href="#" class="myButton"id="7">   </button>
+	<button href="#" class="myButton"id="8">   </button>
+	<button href="#" class="myButton"id="9">   </button>
+	<div></div>
+	<div></div>
+	<div></div>
+    <div align="center" id="chat-text" style="width:500px;height:100px;overflow-y:scroll">
+        <div>Hello! Trash talk your opponent!</div>
+    </div>
+ 
+    <form align="center" id="chat-form">
+        <input id="chat-input" type="text" style="width:500px"></input>
+    </form>
+	<div> <button id="restart">restart </button></div>
+</div>
+ 
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<script>
+    var socket = io();
+   
+    //sign
+    var signDiv = document.getElementById('signDiv');
+    var signDivUsername = document.getElementById('signDiv-username');
+    var signDivSignIn = document.getElementById('signDiv-signIn');
+    var restartButton =  document.getElementById('restart');
+	var disabledButtons=[];
+	
+	var button1= document.getElementById('1');
+	var button2= document.getElementById('2');
+	var button3= document.getElementById('3');
+	var button4= document.getElementById('4');
+	var button5= document.getElementById('5');
+	var button6= document.getElementById('6');
+	var button7= document.getElementById('7');
+	var button8= document.getElementById('8');
+	var button9= document.getElementById('9');
+	
+	
+	
+	    button1.onclick = function(){
+		disabledButtons.push(button1);
+		disableButtons();
+		button1.style.backgroundColor="#49638a";
+        socket.emit('buttonClick',1);
+    }
+	    button2.onclick = function(){
+		disabledButtons.push(button2);
+		disableButtons();
+		button2.style.backgroundColor="#49638a";
+        socket.emit('buttonClick',2);
+    }
+	    button3.onclick = function(){
+		disabledButtons.push(button3);
+		disableButtons();
+		button3.style.backgroundColor="#49638a";
+        socket.emit('buttonClick',3);
+    }
+	    button4.onclick = function(){
+		disabledButtons.push(button4);
+		disableButtons();
+		button4.style.backgroundColor="#49638a";
+        socket.emit('buttonClick',4);
+    }
+	    button5.onclick = function(){
+		disabledButtons.push(button5);
+		disableButtons();
+		button5.style.backgroundColor="#49638a";
+        socket.emit('buttonClick',5);
+    }
+	    button6.onclick = function(){
+		disabledButtons.push(button6);
+		disableButtons();
+		button6.style.backgroundColor="#49638a";
+        socket.emit('buttonClick',6);
+    }
+	    button7.onclick = function(){
+		disabledButtons.push(button7);
+		disableButtons();
+		button7.style.backgroundColor="#49638a";
+        socket.emit('buttonClick',7);
+    }
+	    button8.onclick = function(){
+		disabledButtons.push(button8);
+		disableButtons();
+		button8.style.backgroundColor="#49638a";
+        socket.emit('buttonClick',8);
+    }
+	    button9.onclick = function(){ 
+		disabledButtons.push(button9);
+		disableButtons();
+		button9.style.backgroundColor="#49638a";
+        socket.emit('buttonClick',9);
+    }
+	  restartButton.onclick = function(){
+		disabledButtons=[];
+		onlyDisableUsedButtons();
+		resetButtons();
+		alert("New game started. You must wait until your opponent hits the restart!");
+    }
+   
+    signDivSignIn.onclick = function(){
+        socket.emit('signIn',{username:signDivUsername.value});
+    }
+    socket.on('signInResponse',function(data){
+        if(data.success){
+            signDiv.style.display = 'none';
+            gameDiv.style.display = 'inline-block';
+        } else
+            alert("Sign in unsuccessul. Name already taken. Please sign in with another name.");
+    });
+   
+ 
+    //game
+	var chatText = document.getElementById('chat-text');
+    var chatInput = document.getElementById('chat-input');
+    var chatForm = document.getElementById('chat-form');
+   
+       
+   
+    socket.on('addToChat',function(data){
+        chatText.innerHTML += '<div>' + data + '</div>';
+    });
+    socket.on('evalAnswer',function(data){
+        console.log(data);
+    });
+	socket.on('playerLeftChat',function(data){
+        chatText.innerHTML += '<div>'  + data + '</div>';
+    });
+	
+	socket.on('playerEnteredChat',function(data){
+        chatText.innerHTML += '<div>'  + data + '</div>';
+    });
+	
+	socket.on('gameFull',function(data){
+        alert("Sorry.. there is a current game playing right now");
+    });
+	
+	socket.on('changeButtonsOpponent',function(data){
+        var button= document.getElementById(data);
+		button.style.backgroundColor="#8f4d4d";
+		disabledButtons.push(document.getElementById(data));
+		onlyDisableUsedButtons();	
+		
+    });
+	
+	var onlyDisableUsedButtons=function(){
+	
+	button1.disabled=false;
+	button2.disabled=false;
+	button3.disabled=false;
+	button4.disabled=false;
+	button5.disabled=false;
+	button6.disabled=false;
+	button7.disabled=false;
+	button8.disabled=false;
+	button9.disabled=false; 
+	
+		for (i in disabledButtons){
+			disabledButtons[i].disabled=true;
+		}
+		return;
+	}
+	
+	var disableButtons=function(){
+	button1.disabled=true;
+	button2.disabled=true;
+	button3.disabled=true;
+	button4.disabled=true;
+	button5.disabled=true;
+	button6.disabled=true;
+	button7.disabled=true;
+	button8.disabled=true;
+	button9.disabled=true;
+	return;
+	}
+	var resetButtons=function(){
+	button1.style.backgroundColor="transparent";
+	button2.style.backgroundColor="transparent";
+	button3.style.backgroundColor="transparent";
+	button4.style.backgroundColor="transparent";
+	button5.style.backgroundColor="transparent";
+	button6.style.backgroundColor="transparent";
+	button7.style.backgroundColor="transparent";
+	button8.style.backgroundColor="transparent";
+	button9.style.backgroundColor="transparent";
+	return;
+	}
+    chatForm.onsubmit = function(e){
+        e.preventDefault();
+        if(chatInput.value[0] === '/')
+            socket.emit('evalServer',chatInput.value.slice(1));
+        else
+            socket.emit('sendMsgToServer',chatInput.value);
+        chatInput.value = '';      
+    }
+   
+   
+   
+   
+</script>
