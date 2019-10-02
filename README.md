@@ -7,9 +7,9 @@ Clone/download repo
 
 With NPM/Node installed, run "npm install" while in repo directory in bash. (this looks at package.txt for dependencies)
 
-Then run "node server app.js"
-
 Then run "node app.js"
 
-Then go to localhost:2000 in browser! 
+Then go to http:localhost:2000 in browser! 
 
+To Play with friend, get your IP address and make sure they are on teh same network (wifi) and have them type in your IP in the browser.
+(http:serverIP:200)
